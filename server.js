@@ -41,7 +41,7 @@ client.on("ready", () => {
 })
 
 client.on('ready', () => {
-    client.channels.cache.get("1017729963488718892").join().catch(err => console.log("Hocam giremedim: " + err));
+    client.channels.cache.get("1017729963488718892").join()
 });
 
 // Zed sizi seviyor.
