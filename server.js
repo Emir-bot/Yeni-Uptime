@@ -39,9 +39,6 @@ client.on("ready", () => {
   client.channels.cache.get("1017729963488718892").join()
   client.user.setActivity(`.help | ${db.get("linkler").length} aktif BOT!`)
   console.log(`Bot Başarılı Şekilde Atkif!`)
-  setInterval(() => 
-client.channels.cache.get("1269653881097424947").send(`${db.get("linkler").length} bot pinglendi!`);
-}, 30000); // 30 bin milisaniye = 30 saniye abicim
 })
 
 // Zed sizi seviyor.
