@@ -73,9 +73,6 @@ let embed = new Discord.RichEmbed()
 **.ekle** *-* Veri tabanına site eklersiniz
 **.say** *-* Sistemde kaç site olduğunu listeler
 `)
-.addField(`Linkimiz`, `[](https://discord.gg/0017)
-[Botumuzu ekleme linki]()
-[Destek sunucu linkimiz](https://discord.gg/)`)
 .setThumbnail(client.user.avatarURL)
 .setAuthor(`Uptime`, client.user.avatarURL)
 .setFooter(`2026 © Uptime Bot | Raxion on the deadline.`, client.user.avatarURL)
@@ -88,9 +85,9 @@ return message.channel.send(embed);
 
 client.on("message", async message => {
 
-  if(!message.content.startsWith("u.eval")) return;
+  if(!message.content.startsWith(".eval")) return;
   if(!["id","id"].includes(message.author.id)) return;
-  var args = message.content.split("u.eval")[1]
+  var args = message.content.split(".eval")[1]
   if(!args) return message.channel.send("Hyr! :(")
   
       const code = args
