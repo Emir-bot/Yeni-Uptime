@@ -2,7 +2,7 @@ require("express")().listen(1343);
 const db = require("quick.db");
 const discord = require("discord.js");
 const client = new discord.Client({ disableEveryone: true });
-client.login("Token"); // UYGULAMA TOKEN'INIZI GİRMEYİ UNUTMAYIN! - İŞLEMLERİ DİKKATLİ YAPIN.
+client.login(process.env.TOKEN); // UYGULAMA TOKEN'INIZI GİRMEYİ UNUTMAYIN! - İŞLEMLERİ DİKKATLİ YAPIN.
 const fetch = require("node-fetch");
 const fs = require('fs')
 
