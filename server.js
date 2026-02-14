@@ -36,7 +36,6 @@ db.set("linkler", [])
 })
 
 client.on("ready", () => {
-  //client.channels.cache.get("1017729963488718892").join()
   client.user.setActivity(`.help | ${db.get("linkler").length} aktif BOT!`)
   console.log(`Bot Başarılı Şekilde Atkif!`)
 })
