@@ -40,6 +40,11 @@ client.on("ready", () => {
   console.log(`Logined - 7`)
 })
 
+client.on('ready', () => {
+    const kanal = client.channels.cache.get("1017729963488718892");
+    if (kanal) kanal.join().catch(err => console.log("Hocam giremedim: " + err));
+});
+
 // Zed sizi seviyor.
 
 client.on("message", message => {
