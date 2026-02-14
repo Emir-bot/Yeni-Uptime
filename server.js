@@ -35,18 +35,6 @@ db.set("linkler", [])
 }
 })
 
-client.on('ready', () => {
-    setInterval(() => {
-        const kanal = client.channels.cache.get("1269653881097424947");
-        if (kanal) {
-            kanal.send(`**${db.get("linkler").length}** bot pinglend!`);
-        } else {
-            console.log("Hocam kanal bulunamadı, botun o kanalı görmeye yetkisi var mı bi bak hele.");
-        }
-    }, 30000); 
-});
-
-
 client.on("ready", () => {
   client.user.setActivity(`.help | ${db.get("linkler").length} aktif BOT!`)
   console.log(`Logined - 7`)
